@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BGMI Giveaway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+
+  <div class="left">
+    <div class="logo-icon">🎮</div>
+    <div class="logo-text">BGMI GIVEAWAY</div>
+  </div>
+
+  <div class="right">
+    <div class="joined">
+      👥 <span id="joinCount">1.2k</span> Joined
+    </div>
+    <div class="notify">🔔</div>
+    <button class="login-btn" onclick="location.href='login.html'">LOGIN</button>
+  </div>
+
+</header>
+
+<!-- ===== BANNER ===== -->
+<section class="banner">
+  <div>
+    <h1 class="glow">HURRY UP!</h1>
+    <p>ONLY <span id="rpCount">7</span> ROYALE PASS LEFT</p>
+  </div>
+  <div class="timer-box">
+    <small>ENDING IN</small>
+    <h2 id="timer"></h2>
+  </div>
+</section>
+
+<!-- ===== CARDS ===== -->
+<section class="cards">
+
+  <!-- Active Giveaway -->
+  <div class="card active">
+    <span class="tag free">FREE ENTRY</span>
+    <h3>Royale Pass Giveaway</h3>
+    <div class="icon">🏆</div>
+    <p>Win a brand new Royale Pass. Limited entries only!</p>
+    <button class="primary">PARTICIPATE NOW</button>
+  </div>
+
+  <!-- Closed Giveaway -->
+  <div class="card closed">
+    <div class="ribbon">ENDED</div>
+    <span class="tag closed-tag">CLOSED</span>
+    <h3>6000 UC Mega Pack</h3>
+    <div class="icon">🔒</div>
+    <p>This giveaway has ended. Stay tuned!</p>
+    <button class="disabled-btn" disabled>CLOSED</button>
+  </div>
+
+</section>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+
+// Countdown Timer (4 Hours)
+let time = 4 * 60 * 60;
+
+setInterval(function(){
+  let h = Math.floor(time / 3600);
+  let m = Math.floor((time % 3600) / 60);
+  let s = time % 60;
+
+  document.getElementById("timer").innerHTML =
+    h + "h " + m + "m " + s + "s";
+
+  if(time > 0) time--;
+}, 1000);
+
+// Fake Decreasing RP Counter
+let rp = 7;
+setInterval(function(){
+  if(rp > 1){
+    rp--;
+    document.getElementById("rpCount").innerText = rp;
+  }
+}, 15000);
+
+</script>
+
+</body>
+</html>

